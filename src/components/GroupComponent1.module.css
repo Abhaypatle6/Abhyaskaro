@@ -1,0 +1,82 @@
+.frameChild {
+  width: 100%; /* Adjusted width to be responsive */
+  height: auto; /* Changed height to auto for responsiveness */
+  position: relative;
+  background-color: var(--color-whitesmoke);
+  display: none;
+  max-width: 100%;
+}
+
+.reviewSubmission {
+  width: 100%; /* Adjusted width to be responsive */
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 21px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xs);
+  box-sizing: border-box;
+  font-family: var(--font-roboto-mono);
+  font-weight: 500;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+}
+
+.amitJhaHandleChild {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  border-top: 1px solid var(--color-darkgray);
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.amitJhaHandle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-10xs);
+}
+
+.someReviewSubmitted {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  font-weight: 100;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.rectangleParent,
+.somethingElse {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column; /* Changed to column for responsiveness */
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-8xs) 0 var(--padding-7xs);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.rectangleParent {
+  background-color: var(--color-whitesmoke);
+  padding: var(--padding-3xs) var(--padding-smi) var(--padding-19xl);
+  gap: var(--gap-mid);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  font-family: var(--font-roboto-mono);
+}
+
+/* Media query for adjusting styles based on screen width */
+@media (min-width: 768px) {
+  .rectangleParent {
+    flex-direction: row; /* Change back to row for larger screens */
+  }
+}
